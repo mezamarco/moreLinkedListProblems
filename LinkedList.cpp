@@ -8,6 +8,41 @@ LinkedList::LinkedList(){
 }
 
 
+LinkedList::~LinkedList(){
+	
+	//Segmentation fault if we try deleting all the nodes because
+	//of the MergeList and the LoopList
+	//deleteAll(root);
+	//Therefore simply return.
+	
+	return;
+}
+
+void LinkedList::deleteAll(Node* root){
+
+
+
+	if(root == nullptr){
+		return;
+	}
+
+	//Use two tracking pointers and delete the one behind
+	Node* current;
+	Node* tracking = root;
+	while(tracking){
+	
+		current = tracking;
+		tracking = tracking ->nextPtr;
+		std::cout << "Delete: "  << current->value<< std::endl;
+
+		delete(current);
+
+	}
+
+
+}
+
+
 
 bool LinkedList::insert(int num){
 	

@@ -88,15 +88,9 @@ int main(){
 	loopList.createLoop();
 
 	std::cout << "\n\n\nWe have created a new LinkedList.\n";
-//	std::cout <<"\nLinkedList loopList:\n";
-//	loopList.printAll();
 
 	std::cout << "\nDo we have a loop in the loopList LinkedList: " << loopList.detectLoop();
 	std::cout << "\n\n";
 
-
-
-	
-	return 0;
 
 }

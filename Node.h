@@ -10,6 +10,7 @@ public:
 
 	//Default constructor
 	Node(int val);
+	~Node();
 };
 
 #endif

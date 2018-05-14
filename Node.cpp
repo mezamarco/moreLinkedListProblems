@@ -7,3 +7,6 @@ Node::Node(int val){
 	nextPtr = nullptr;
 }
 
+Node::~Node(){
+	
+}

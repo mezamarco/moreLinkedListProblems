@@ -12,11 +12,12 @@ public:
 	Node* root;
 
 	LinkedList();
-	
+	~LinkedList();
+
 	bool insert(int num);
 	void printAll();
 
-
+	
 
 
 	//We will solve three problem using linked list
@@ -34,6 +35,10 @@ public:
 
 	///Create a loop;
 	void createLoop();
+
+	//We delete all the nodes using a static helper function, becasue we are deleting nodes
+	//not this LinkedList itself
+	static void deleteAll(Node* root);
 
 };
 
